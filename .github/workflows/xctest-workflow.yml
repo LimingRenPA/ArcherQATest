@@ -1,4 +1,4 @@
-name: iOS Test Workflow
+=iPhone 14 Pro Maxname: iOS Test Workflow
 on:
   push:
     branches:
@@ -18,11 +18,11 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
             xcode-version: '14.2.0'        
-      - name: testing ... iPad (10th generation)
-        run: >-
-          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,id=228287AE-182F-4FA9-9C93-097B421023C4'
       - name: testing ... iOS 14 Pro Max
         run: >-
-          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,id=C2659247-054E-4121-9238-7CC7236657D1'
+          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max'
+      - name: testing ... iPad (10th generation)
+        run: >-
+          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,name=iPad (10th generation)'
 
   
