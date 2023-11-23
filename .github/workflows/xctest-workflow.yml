@@ -1,4 +1,4 @@
-=iPhone 14 Pro Maxname: iOS Test Workflow
+name: iOS Test Workflow
 on:
   push:
     branches:
