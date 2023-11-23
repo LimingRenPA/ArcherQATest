@@ -6,36 +6,23 @@ on:
   pull_request:
     branches:
       - develop
+  workflow_dispatch:
 jobs:
   build:
     name: Build and Test default scheme using iPhone/iPad simulator
     runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Force Xcode 11
-        run: sudo xcode-select -switch /Applications/Xcode_11.7.app
-      - name: iOS build setup
+        uses: actions/checkout@v3
+      - name: Force Xcode 14.2.0
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+            xcode-version: '14.2.0'        
+      - name: testing ... iPad (10th generation)
         run: >-
-          xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
-          -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone
-          11,OS=13.7'
-      - name: testing ... iPhone 11
+          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,id=228287AE-182F-4FA9-9C93-097B421023C4'
+      - name: testing ... iOS 14 Pro Max
         run: >-
-          xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
-          -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone
-          11,OS=13.7'
-      - name: testing ... iPhone 11 Pro Max
-        run: >-
-          xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
-          -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone 11
-          Pro Max,OS=13.7'
-      - name: testing ... iPad Air
-        run: >-
-          xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
-          -scheme TestApp -destination 'platform=iOS Simulator,name=iPad Air
-          (3rd generation),OS=13.7'
-      - name: testing ... iPad Pro 12.9
-        run: >-
-          xcodebuild test -workspace TestApp.xcodeproj/project.xcworkspace
-          -scheme TestApp -destination 'platform=iOS Simulator,name=iPad Pro (12.9-inch) (4th generation),OS=13.7'
+          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,id=C2659247-054E-4121-9238-7CC7236657D1'
+
+  
