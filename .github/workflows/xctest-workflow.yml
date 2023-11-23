@@ -20,7 +20,7 @@ jobs:
             xcode-version: '14.2.0'        
       - name: testing ... iOS 14 Pro Max
         run: >-
-          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,name=iPhone 14 Pro Max,OS=17.0.1'
+          xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,name=Any iOS Simulator Device'
       - name: testing ... iPad (10th generation)
         run: >-
           xcodebuild test -project  ArcherQATest.xcodeproj -scheme ArcherQATest -destination 'platform=iOS Simulator,name=iPad (10th generation)'
