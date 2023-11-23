@@ -15,6 +15,9 @@
 		8B2273412B0E860E000B5E25 /* ArcherQATestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2273402B0E860E000B5E25 /* ArcherQATestUITests.swift */; };
 		8B2273432B0E860E000B5E25 /* ArcherQATestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2273422B0E860E000B5E25 /* ArcherQATestUITestsLaunchTests.swift */; };
 		8B2273502B0E8A7C000B5E25 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8B22734F2B0E8A7C000B5E25 /* .gitignore */; };
+		8B2273522B0E8D1D000B5E25 /* Earth_1_12756.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8B2273512B0E8D1D000B5E25 /* Earth_1_12756.usdz */; };
+		8B2273542B0E8D2D000B5E25 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8B2273532B0E8D2D000B5E25 /* cup_saucer_set.usdz */; };
+		8B2273562B0E8DE7000B5E25 /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8B2273552B0E8DE7000B5E25 /* TinyToyTank.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		8B2273402B0E860E000B5E25 /* ArcherQATestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherQATestUITests.swift; sourceTree = "<group>"; };
 		8B2273422B0E860E000B5E25 /* ArcherQATestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcherQATestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B22734F2B0E8A7C000B5E25 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8B2273512B0E8D1D000B5E25 /* Earth_1_12756.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Earth_1_12756.usdz; sourceTree = "<group>"; };
+		8B2273532B0E8D2D000B5E25 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		8B2273552B0E8DE7000B5E25 /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		8B2273242B0E860C000B5E25 /* ArcherQATest */ = {
 			isa = PBXGroup;
 			children = (
+				8B2273552B0E8DE7000B5E25 /* TinyToyTank.rcproject */,
+				8B2273532B0E8D2D000B5E25 /* cup_saucer_set.usdz */,
+				8B2273512B0E8D1D000B5E25 /* Earth_1_12756.usdz */,
 				8B2273252B0E860C000B5E25 /* AppDelegate.swift */,
 				8B2273272B0E860C000B5E25 /* ContentView.swift */,
 				8B2273292B0E860E000B5E25 /* Assets.xcassets */,
@@ -236,6 +245,8 @@
 			files = (
 				8B22732D2B0E860E000B5E25 /* Preview Assets.xcassets in Resources */,
 				8B2273502B0E8A7C000B5E25 /* .gitignore in Resources */,
+				8B2273542B0E8D2D000B5E25 /* cup_saucer_set.usdz in Resources */,
+				8B2273522B0E8D1D000B5E25 /* Earth_1_12756.usdz in Resources */,
 				8B22732A2B0E860E000B5E25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +274,7 @@
 			files = (
 				8B2273282B0E860C000B5E25 /* ContentView.swift in Sources */,
 				8B2273262B0E860C000B5E25 /* AppDelegate.swift in Sources */,
+				8B2273562B0E8DE7000B5E25 /* TinyToyTank.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
